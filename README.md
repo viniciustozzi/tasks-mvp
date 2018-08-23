@@ -1,16 +1,33 @@
 # tasks-mvp
 
-FIXME: description
+Simple and easy to use console based task manager.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+To build
+
+```bash
+make
+```
+
+then 
+
+```bash
+make install
+```
 
 ## Usage
 
-FIXME: explanation
+Add simple todo item
+```bash
+tsk add -m "Listen to new  single from Weki Meki"
+```
 
-    $ java -jar tasks-mvp-0.1.0-standalone.jar [args]
+Add cron based task
+
+```
+tks add -m "Wacth new episode of Black Pink house" -c "0 0 * * MON"  
+```
 
 ## Options
 

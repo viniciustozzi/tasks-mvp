@@ -3,7 +3,10 @@
 
 
 (def add-option
-  [["-m" "--message MESSAGE" "Task description"]])
+  ;;TODO: make this option required.
+  [["-m" "--message MESSAGE" "Task description"
+    :default "EMPTY TASK"]
+   ["-c" "--cron *****" "Cron based task schedule"]])
 
 (defn parse [action & params]
   (case action
